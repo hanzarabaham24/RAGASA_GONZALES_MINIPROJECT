@@ -1,0 +1,29 @@
+2026-08-18 15:39:12 | INFO | Connecting to SQLite source: /mnt/data/global_supply_chain_logistics_project/database/shop_oltp_p2.db
+2026-08-18 15:39:12 | INFO | Validating source schema for table 'orders'.
+2026-08-18 15:39:12 | INFO | Schema lock passed with 7 expected columns.
+2026-08-18 15:39:12 | INFO | Extracting operational records from SQLite.
+2026-08-18 15:39:12 | INFO | Extracted 4000 source rows.
+2026-08-18 15:39:12 | INFO | Validating 4000 records and isolating invalid rows.
+2026-08-18 15:39:13 | WARNING | Quarantined 280 invalid rows in total.
+2026-08-18 15:39:13 | INFO | Negative-duration quarantine rows: 160; missing-container rows: 120.
+2026-08-18 15:39:13 | INFO | Sanitizing port and shipping-line strings.
+2026-08-18 15:39:13 | INFO | Aggregating shipping-line performance metrics.
+2026-08-19 02:16:19 | INFO | ========== PROJECT 2 PIPELINE START ==========
+2026-08-19 02:16:19 | INFO | Connecting to SQLite source: C:\Users\My PC\Desktop\School\Data Warehouse\RAGASA_GONZALES_MINIPROJECT\database\shop_oltp_p2.db
+2026-08-19 02:16:19 | INFO | Validating source schema for table 'orders'.
+2026-08-19 02:16:19 | INFO | Schema lock passed with 7 expected columns.
+2026-08-19 02:16:19 | INFO | Extracting operational records from SQLite.
+2026-08-19 02:16:19 | INFO | Extracted 4000 source rows.
+2026-08-19 02:16:19 | INFO | Validating 4000 records and isolating invalid rows.
+2026-08-19 02:16:20 | INFO | Applied SHA-256 masking to container tracking identifiers in quarantine outputs.
+2026-08-19 02:16:20 | WARNING | Quarantined 280 invalid rows in total.
+2026-08-19 02:16:20 | INFO | Negative-duration quarantine rows: 160; missing-container rows: 120.
+2026-08-19 02:16:20 | INFO | Sanitizing port and shipping-line strings.
+2026-08-19 02:16:20 | INFO | Aggregating shipping-line performance metrics.
+2026-08-19 02:16:20 | INFO | Masking container tracking identifiers with SHA-256 for analytical output.
+2026-08-19 02:16:20 | INFO | Writing required analytical Parquet summary.
+2026-08-19 02:16:20 | INFO | Wrote Hive-style detail partitions by shipping_line and year under C:\Users\My PC\Desktop\School\Data Warehouse\RAGASA_GONZALES_MINIPROJECT\data\lakehouse.
+2026-08-19 02:16:20 | INFO | Performing Parquet read-back validation.
+2026-08-19 02:16:20 | INFO | Parquet read-back validation passed, including SHA-256 masking checks.
+2026-08-19 02:16:20 | INFO | Pipeline summary | source=4000 | valid=3720 | quarantined=280 | summary_rows=5 | duration=1.709s
+2026-08-19 02:16:20 | INFO | ========== PROJECT 2 PIPELINE SUCCESS ==========
